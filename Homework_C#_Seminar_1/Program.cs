@@ -41,7 +41,7 @@ if(value3 > value_max)
         value_max = value3;
     }
 Console.WriteLine("Наибольшее число " + value_max);
-*/
+
 // Третья задача:
 
 Console.Write("Введите число: ");
@@ -54,4 +54,15 @@ if(value % 2 == 0)
 else
     {
         Console.WriteLine("Число " + value + " нечетное");
+    }
+*/
+// Четвертая задача:
+Console.Write("Введите число: ");
+int value = Convert.ToInt32(Console.ReadLine());
+int number = 2;
+
+while(number <= value)
+    {
+        Console.Write(number + " ");
+        number+=2;
     }
