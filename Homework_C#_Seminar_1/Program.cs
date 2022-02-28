@@ -1,4 +1,4 @@
-﻿
+﻿/*
 //Превая задача:
 Console.Write("Введите первое число: ");
 int value1 = Convert.ToInt32(Console.ReadLine());
@@ -22,7 +22,7 @@ if(value1 >= value2 || value2 >= value1)
         }
     }
 // Вторая задача:
-/*
+
 Console.Write("Введите первое число: ");
 int value1 = Convert.ToInt32(Console.ReadLine());
 
@@ -61,15 +61,41 @@ else
     {
         Console.WriteLine("Число " + value + " нечетное");
     }
-
+*/
 // Четвертая задача:
 Console.Write("Введите число: ");
 int value = Convert.ToInt32(Console.ReadLine());
-int number = 2;
 
+if(value < 0)
+{
+    value = value * -1;
+    int number = 2;
+    if(value < 2 && value > -2)
+    {
+        Console.WriteLine("У числа нет четных значений");
+    }
+    else
+    {
+     while(number <= value)
+        {
+            Console.Write("-" + number + " ");
+            number+=2;
+        }
+    }
+}
+else
+{
+int number = 2;
+if(value < 2 && value > -2)
+{
+  Console.WriteLine("У числа нет четных значений");
+}
+else
+{
 while(number <= value)
     {
         Console.Write(number + " ");
         number+=2;
     }
-*/
+}
+}
