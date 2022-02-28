@@ -63,6 +63,7 @@ else
     }
 */
 // Четвертая задача:
+
 Console.Write("Введите число: ");
 int value = Convert.ToInt32(Console.ReadLine());
 
@@ -85,17 +86,17 @@ if(value < 0)
 }
 else
 {
-int number = 2;
-if(value < 2 && value > -2)
-{
-  Console.WriteLine("У числа нет четных значений");
-}
-else
-{
-while(number <= value)
+    int number = 2;
+    if(value < 2 && value > -2)
     {
-        Console.Write(number + " ");
-        number+=2;
+        Console.WriteLine("У числа нет четных значений");
     }
-}
+    else
+    {
+        while(number <= value)
+        {
+            Console.Write(number + " ");
+            number+=2;
+        }
+    }
 }
