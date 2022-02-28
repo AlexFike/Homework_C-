@@ -1,4 +1,4 @@
-﻿/*
+﻿
 //Превая задача:
 Console.Write("Введите первое число: ");
 int value1 = Convert.ToInt32(Console.ReadLine());
@@ -6,17 +6,23 @@ int value1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите первое число: ");
 int value2 = Convert.ToInt32(Console.ReadLine());
 
-if(value1 > value2)
+if(value1 >= value2 || value2 >= value1)
     {
-        Console.WriteLine(value1 + " больше " + value2);
+        if(value1 > value2)
+        {
+            Console.WriteLine("Число " + value1 + " больше числа " + value2);
+        }
+        if(value2 > value1)
+        {
+            Console.WriteLine("Число " + value2 + " больше числа " + value1);
+        }
+        if(value1 == value2)
+        {
+            Console.WriteLine("Числа равны");
+        }
     }
-else
-    {
-        Console.WriteLine(value2 + " больше " + value1);
-    }
-
 // Вторая задача:
-
+/*
 Console.Write("Введите первое число: ");
 int value1 = Convert.ToInt32(Console.ReadLine());
 
@@ -55,7 +61,7 @@ else
     {
         Console.WriteLine("Число " + value + " нечетное");
     }
-*/
+
 // Четвертая задача:
 Console.Write("Введите число: ");
 int value = Convert.ToInt32(Console.ReadLine());
@@ -66,3 +72,4 @@ while(number <= value)
         Console.Write(number + " ");
         number+=2;
     }
+*/
