@@ -71,7 +71,7 @@ if(value < 0)
 {
     value = value * -1;
     int number = 2;
-    if(value < 2 && value > -2)
+    if(value < 2)
     {
         Console.WriteLine("У числа нет четных значений");
     }
@@ -87,7 +87,7 @@ if(value < 0)
 else
 {
     int number = 2;
-    if(value < 2 && value > -2)
+    if(value < 2)
     {
         Console.WriteLine("У числа нет четных значений");
     }
