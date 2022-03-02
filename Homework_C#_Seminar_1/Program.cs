@@ -1,9 +1,9 @@
 ﻿/*
 //Превая задача:
-Console.Write("Введите первое число: ");
+Console.Write("Введите первое целое число: ");
 int value1 = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите первое число: ");
+Console.Write("Введите второе целое число: ");
 int value2 = Convert.ToInt32(Console.ReadLine());
 
 if(value1 >= value2 || value2 >= value1)
@@ -23,13 +23,13 @@ if(value1 >= value2 || value2 >= value1)
     }
 // Вторая задача:
 
-Console.Write("Введите первое число: ");
+Console.Write("Введите первое целое число: ");
 int value1 = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите второе число: ");
+Console.Write("Введите второе целое число для: ");
 int value2 = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите третье число: ");
+Console.Write("Введите третье целое число для: ");
 int value3 = Convert.ToInt32(Console.ReadLine());
 
 int value_max = 0;
@@ -50,7 +50,7 @@ Console.WriteLine("Наибольшее число " + value_max);
 
 // Третья задача:
 
-Console.Write("Введите число: ");
+Console.Write("Введите целое число: ");
 int value = Convert.ToInt32(Console.ReadLine());
 
 if(value % 2 == 0)
@@ -64,7 +64,7 @@ else
 */
 // Четвертая задача:
 
-Console.Write("Введите число: ");
+Console.Write("Введите целое число: ");
 int value = Convert.ToInt32(Console.ReadLine());
 
 if(value < 0)
@@ -79,7 +79,7 @@ if(value < 0)
     {
      while(number <= value)
         {
-            Console.Write("-" + number + " ");
+            Console.Write("Все четные значения числа: -" + number + " ");
             number+=2;
         }
     }
@@ -95,7 +95,7 @@ else
     {
         while(number <= value)
         {
-            Console.Write(number + " ");
+            Console.Write("Все четные значения числа: " + number + " ");
             number+=2;
         }
     }
