@@ -11,7 +11,7 @@ Console.Write("Введите трехзначное число число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Средняя цифра цисла " + ModNum(number));
-*/
+
 // task two
 void ModNum2(int Num)
 {
@@ -33,3 +33,20 @@ Console.Write("Введите целое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 ModNum2(number);
+*/
+// task three
+void value(int num)
+{
+    if(num == 6 || num == 7)
+    {
+       Console.WriteLine("Этот день недели является выходным днем");
+    }
+    else
+    {
+        Console.WriteLine("Этот день не является выходным днем");
+    }
+}
+
+Console.Write("Введите номер недели от 1 до 7: ");
+int number = Convert.ToInt32(Console.ReadLine());
+value(number);
