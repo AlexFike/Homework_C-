@@ -23,7 +23,7 @@ int number;
 Console.Write("Введите пятизначное целое число, чтобы узнать, является ли оно палиндромом: ");
 number = Convert.ToInt32(Console.ReadLine());
 PalNum(number);
-*/
+
 //Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 
 //A (3,6,8); B (2,1,-7), -> 15.84
@@ -52,3 +52,25 @@ Console.Write("Введите Z координаты точки B: ");
 zB = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine("Растояние между точками = " + CoorPoint(xA, yA, zA, xB, yB, zB));
+*/
+//Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+
+//3 -> 1, 8, 27
+//5 -> 1, 8, 27, 64, 125
+
+void CubeN(int number)
+{
+    int value = 1;
+    double Num;
+    while(value <= number)
+    {
+        Num = Math.Pow(value, 3);
+        Console.Write(Num + " ");
+        value++;
+    }
+}
+int InNum;
+Console.Write("Введите число для отображения таблицы кубов: ");
+InNum = Convert.ToInt32(Console.ReadLine());
+Console.Write("Таблица кубов числа: ");
+CubeN(InNum);
