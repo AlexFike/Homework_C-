@@ -1,0 +1,15 @@
+C:\Users\AL\Desktop\GeekBrains\developer\C#\Homework C#\Homework_C#_Seminar_4\bin\Debug\net6.0\Homework_C#_Seminar_4.exe
+C:\Users\AL\Desktop\GeekBrains\developer\C#\Homework C#\Homework_C#_Seminar_4\bin\Debug\net6.0\Homework_C#_Seminar_4.deps.json
+C:\Users\AL\Desktop\GeekBrains\developer\C#\Homework C#\Homework_C#_Seminar_4\bin\Debug\net6.0\Homework_C#_Seminar_4.runtimeconfig.json
+C:\Users\AL\Desktop\GeekBrains\developer\C#\Homework C#\Homework_C#_Seminar_4\bin\Debug\net6.0\Homework_C#_Seminar_4.dll
+C:\Users\AL\Desktop\GeekBrains\developer\C#\Homework C#\Homework_C#_Seminar_4\bin\Debug\net6.0\Homework_C#_Seminar_4.pdb
+C:\Users\AL\Desktop\GeekBrains\developer\C#\Homework C#\Homework_C#_Seminar_4\obj\Debug\net6.0\Homework_C#_Seminar_4.csproj.AssemblyReference.cache
+C:\Users\AL\Desktop\GeekBrains\developer\C#\Homework C#\Homework_C#_Seminar_4\obj\Debug\net6.0\Homework_C#_Seminar_4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AL\Desktop\GeekBrains\developer\C#\Homework C#\Homework_C#_Seminar_4\obj\Debug\net6.0\Homework_C#_Seminar_4.AssemblyInfoInputs.cache
+C:\Users\AL\Desktop\GeekBrains\developer\C#\Homework C#\Homework_C#_Seminar_4\obj\Debug\net6.0\Homework_C#_Seminar_4.AssemblyInfo.cs
+C:\Users\AL\Desktop\GeekBrains\developer\C#\Homework C#\Homework_C#_Seminar_4\obj\Debug\net6.0\Homework_C#_Seminar_4.csproj.CoreCompileInputs.cache
+C:\Users\AL\Desktop\GeekBrains\developer\C#\Homework C#\Homework_C#_Seminar_4\obj\Debug\net6.0\Homework_C#_Seminar_4.dll
+C:\Users\AL\Desktop\GeekBrains\developer\C#\Homework C#\Homework_C#_Seminar_4\obj\Debug\net6.0\refint\Homework_C#_Seminar_4.dll
+C:\Users\AL\Desktop\GeekBrains\developer\C#\Homework C#\Homework_C#_Seminar_4\obj\Debug\net6.0\Homework_C#_Seminar_4.pdb
+C:\Users\AL\Desktop\GeekBrains\developer\C#\Homework C#\Homework_C#_Seminar_4\obj\Debug\net6.0\Homework_C#_Seminar_4.genruntimeconfig.cache
+C:\Users\AL\Desktop\GeekBrains\developer\C#\Homework C#\Homework_C#_Seminar_4\obj\Debug\net6.0\ref\Homework_C#_Seminar_4.dll
