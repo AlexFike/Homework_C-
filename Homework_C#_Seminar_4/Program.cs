@@ -41,6 +41,11 @@ Console.Write($"{numberB} степень числа {numberA} ровна {Degree
 
 void ARR(int size)
 {
+    while(size <= 0)
+    {
+        Console.Write("Задайте размер массива из натуральных чисел: ");
+        size = Convert.ToInt32(Console.ReadLine());
+    }
     int[] array = new int[size];
     for(int index = 0; index < size; index++)
     {
@@ -54,9 +59,4 @@ void ARR(int size)
 
 Console.Write("Задайте размер массива: ");
 int a = Convert.ToInt32(Console.ReadLine());
-while(a <= 0)
-{
-    Console.Write("Задайте размер массива из натуральных чисел: ");
-    a = Convert.ToInt32(Console.ReadLine());
-}
 ARR(a);
