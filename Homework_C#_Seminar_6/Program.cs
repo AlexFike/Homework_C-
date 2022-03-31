@@ -28,9 +28,9 @@
 // 1 0 0 1
 // 1 1 1 1
 
-void Matrix(int rows, int colums)
+void Matrix(int colums, int rows)
 {
-    int[,] array = new int[rows, colums];
+    int[,] array = new int[colums, rows];
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
@@ -47,8 +47,8 @@ void Matrix(int rows, int colums)
     }
 }
 
-Console.Write("Enter the number of rows: ");
-int r = Convert.ToInt32(Console.ReadLine());
 Console.Write("Enter the number of colums: ");
 int c = Convert.ToInt32(Console.ReadLine());
-Matrix(r, c);
+Console.Write("Enter the number of rows: ");
+int r = Convert.ToInt32(Console.ReadLine());
+Matrix(c, r);
