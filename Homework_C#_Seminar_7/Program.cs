@@ -5,9 +5,9 @@
 // // 1 -3,3 8 -9,9
 // // 8 7,8 -7,1 9
 
-// double[,] ArrayRealNumbers(int columns, int rows, int minValueGenerated, int maxValueGenerated, int point)
+// double[,] ArrayRealNumbers(int rows, int columns, int minValueGenerated, int maxValueGenerated, int point)
 // {
-//     double[,] newArray = new double[columns, rows];
+//     double[,] newArray = new double[rows, columns];
 //     Random numbers = new Random();
 //     for (int i = 0; i < newArray.GetLength(0); i++)
 //     {
@@ -22,8 +22,8 @@
 //     }
 //    return newArray;
 // }
-int enterColumns = 3;
-int enterRows = 4;
+int enterRows = 3;
+int enterColumns = 4;
 int enterMinValueGenerated = 1;
 int enterMaxValueGenerated = 10;
 int enterNumbersAfterDecimalPoint = 1;
@@ -36,7 +36,7 @@ int enterNumbersAfterDecimalPoint = 1;
 // // 8 4 2 4
 // // 1 7 -> такого числа в массиве нет
 
-// void ElementPositionInArray(int positionColumn, int positionRow, double[,] incomingArray)
+// void ElementPositionInArray(int positionRow, int positionColumn, double[,] incomingArray)
 // {
 //     double value = 0;
 //     int tumbler = 0;
@@ -45,7 +45,7 @@ int enterNumbersAfterDecimalPoint = 1;
 //         for (int j = 0; j < incomingArray.GetLength(1); j++)
 //         {
 //             Console.Write("{0,6} ", incomingArray[i, j]);
-//             if (i + 1 == positionColumn && j + 1 == positionRow)
+//             if (i + 1 == positionRow && j + 1 == positionColumn)
 //             {
 //             value = incomingArray[i, j];
 //             tumbler = 1;
@@ -56,12 +56,12 @@ int enterNumbersAfterDecimalPoint = 1;
 //     if (tumbler == 0) Console.WriteLine("There is no such position in the array");
 //     else Console.WriteLine($"Value of this element = {value}");
 // }
-// Console.Write("Enter a position in the element column: ");
-// int posColumns = Convert.ToInt32(Console.ReadLine());
-// Console.Write("Enter a position in the item row: ");
+// Console.Write("Enter a position in the element row: ");
 // int posRows = Convert.ToInt32(Console.ReadLine());
-// ElementPositionInArray(posColumns, posRows,
-// ArrayRealNumbers(enterColumns, enterRows, enterMinValueGenerated, enterMaxValueGenerated, enterNumbersAfterDecimalPoint));
+// Console.Write("Enter a position in the item column: ");
+// int posColumns = Convert.ToInt32(Console.ReadLine());
+// ElementPositionInArray(posRows, posColumns,
+// ArrayRealNumbers(enterRows, enterColumns, enterMinValueGenerated, enterMaxValueGenerated, enterNumbersAfterDecimalPoint));
 
 // Задача 3. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 
@@ -71,9 +71,9 @@ int enterNumbersAfterDecimalPoint = 1;
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
-void ArithmeticMeanArrayColumnElements(int columns, int rows, int start, int end)
+void ArithmeticMeanArrayColumnElements(int rows, int columns, int start, int end)
 {
-    int[,] arr = new int[columns, rows];
+    int[,] arr = new int[rows, columns];
 
     double value = 0;
     for (int i = 0; i < arr.GetLength(0); i++)
@@ -92,9 +92,9 @@ void ArithmeticMeanArrayColumnElements(int columns, int rows, int start, int end
         {
             value = value + arr[i,j];
         }
-        value = value / columns;
+        value = value / rows;
         Console.Write("{0,08} " , Math.Round(value, 1));
         value = 0;     
     }
 }
-ArithmeticMeanArrayColumnElements(enterColumns, enterRows, enterMinValueGenerated, enterMaxValueGenerated);
+ArithmeticMeanArrayColumnElements(enterRows, enterColumns, enterMinValueGenerated, enterMaxValueGenerated);
