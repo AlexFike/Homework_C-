@@ -20,8 +20,8 @@ PaskalTriangle(50);
 
 void PrintPaskalTriangle(int[,] Triangle)
 {
-    int pointTop = Console.WindowTop + 1;
-    int pointLeft = Console.WindowWidth / 2;
+    int pointLeft = Console.WindowTop + 1;
+    int pointTop = Console.WindowWidth / 2;
 
     for (int i = 0; i < Triangle.GetLength(0); i++)
     {
@@ -35,12 +35,12 @@ void PrintPaskalTriangle(int[,] Triangle)
             }
         }
 
-        pointLeft = pointLeft - str.Length / 2;
+        pointTop -= str.Length / 2;
 
-        Console.SetCursorPosition(pointLeft, pointTop);
+        Console.SetCursorPosition(pointTop, pointLeft);
 
-        pointLeft = Console.WindowWidth / 2;
-        pointTop++;
+        pointTop = Console.WindowWidth / 2;
+        pointLeft++;
 
         Console.Write(str);
         Console.WriteLine();
