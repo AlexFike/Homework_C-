@@ -1,4 +1,4 @@
-﻿int[,] CreatePaskalTriangle(int size)
+﻿int[,] PaskalTriangle(int size)
 {
     int[,] matrix = new int[size, size];
     for (int i = 0; i < size; i++)
@@ -13,36 +13,34 @@
             matrix[i, j] = matrix[i - 1, j - 1] + matrix[i - 1, j];
         }
     }
-    PrintTriangleMatrix(matrix);
+    PrintPaskalTriangle(matrix);
     return matrix;
 }
-CreatePaskalTriangle(21);
+PaskalTriangle(50);
 
-void PrintTriangleMatrix(int[,] matrix)
+void PrintPaskalTriangle(int[,] Triangle)
 {
-    int poinTop = Console.WindowTop + 1;
+    int pointTop = Console.WindowTop + 1;
     int pointLeft = Console.WindowWidth / 2;
-    int size;
 
-    for (int i = 0; i < matrix.GetLength(0); i++)
+    for (int i = 0; i < Triangle.GetLength(0); i++)
     {
-        string str = " ";
+        string str = "";
 
-        for (int j = 0; j < matrix.GetLength(0); j++)
+        for (int j = 0; j < Triangle.GetLength(1); j++)
         {
-            if (matrix[i, j] != 0)
+            if (Triangle[i, j] != 0)
             {
-                str = str + Convert.ToString(matrix[i, j]) + " ";
+                str = str + Convert.ToString(Triangle[i, j]) + " ";
             }
         }
 
-        size = str.Length / 2;
-        pointLeft = pointLeft - size;
+        pointLeft = pointLeft - str.Length / 2;
 
-        Console.SetCursorPosition(pointLeft, poinTop);
+        Console.SetCursorPosition(pointLeft, pointTop);
 
         pointLeft = Console.WindowWidth / 2;
-        poinTop++;
+        pointTop++;
 
         Console.Write(str);
         Console.WriteLine();
